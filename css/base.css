@@ -1,0 +1,32 @@
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --primary-light: #dbeafe;
+    --dark: #0f172a;
+    --slate: #64748b;
+    --light: #f8fafc;
+    --warning: #f59e0b;
+    --radius: 12px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    line-height: 1.6; 
+    color: var(--dark); 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; width: 100%; }
+main { flex: 1; padding: 40px 0; }
+.disclaimer-alert {
+    background: var(--warning);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    font-size: 0.8rem;
+}
